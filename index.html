@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.flex-container {
+  display:flex;
+  justify-content:space-around;
+  flex-direction: column;
+  background-color: #f0f2f5;
+  padding:10px;
+  width:100%;
+}
+.sidebyside{
+  display:flex;
+  justify-content:space-around;
+  flex-direction: row;
+  background-color: #f0f2f5;
+  padding:10px;
+}
+.leftcolumn{
+  float:left;
+  width:70%;
+}
+.rightcolumn{
+  float:right;
+  width:20%;
+}
+</style>
+
+</head>
+<body>
+<h1>Online shopping</h1>
+
+<div class="flex-container leftcolumn">
+  <div class="sidebyside">
+   <div class="flex-container">
+     <h3>Billing Address</h3>
+     <form>
+       <label for="fullname">Full Name</label><br>
+       <input type="text" id="fullname" name="fullname" value="John M. Doe"><br>
+       
+       <label for="email">Email</label><br>
+       <input type="text" id="email" name="email" value="johnm@gmail.com"><br>
+       
+       <label for="address">Address</label><br>
+       <input type="text" id="address" name="address" value="1 Main St"><br>
+       
+       <label for="city">City</label><br>
+       <input type="text" id="city" name="city" value="Denver"><br>
+     </form>
+   </div>
+   <div class="flex-container">
+     <h3>Credit Card</h3>
+     <form>
+       <label>Accepted Card</label><br>
+       <input type="text" id="fullname" name="fullname" value="Visa Discover"><br>
+       
+       <label for="nameoncard">Name on Card</label><br>
+       <input type="text" id="nameoncard" name="nameoncard" value="John Doe"><br>
+       
+       <label for="cardnmumber">Card Number</label><br>
+       <input type="text" id="cardnumber" name="cardnumber" value="xxxx-xxxx-xxxx-xxxx"><br>
+       
+       <label for="expmonth">Exp Month</label><br>
+       <input type="text" id="expmonth" name="expmonth" value="12"><br>
+     </form>
+   </div>
+  </div> 
+
+  <div class="sidebyside">
+   <div> 
+    <label for="state">State</label><br>
+    <input type="text" id="state" name="state" value="CO"><br>
+   </div>
+   <div> 
+    <label for="zip">Zip Code</label><br>
+    <input type="text" id="zip" name="zip" value="09822"><br>
+   </div><div> 
+    <label for="expyear">Exp Year</label><br>
+    <input type="text" id="expyear" name="expyear" value="Exp Year"><br>
+   </div>
+   <div> 
+    <label for="cvv">CVV</label><br>
+    <input type="text" id="cvv" name="cvv" value="111"><br>
+   </div>
+  </div>
+    <div>
+    <form action="/hw2.php">
+      <input type="checkbox" id="sameaddress" name="sameaddress" value="1">
+      <label for="sameaddress"> Shipping address is the same as billing address </lable><br>
+      <input type="submit" value="Continue to checkout">
+    </form>
+  </div> 
+</div>
+<div class="sidebyside rightcolumn">
+ <div class="leftcolumn">
+ <h3>Cart</h3>
+ <a href="">Item1</a><br>
+ <a href="">Item2</a><br>
+ <a href="">Item3</a><br>
+ <a href="">Item4</a><br> 
+ <h4>Total</h4>
+ </div>
+ <div class="rightcolumn">
+ <h3>4</h3>
+ <a>$15</a><br>
+ <a>$1</a><br>
+ <a>$2</a><br>
+ <a>$11</a><br>
+ <h4>$29</h4>
+ </div>
+</div>
+
+</body>
+</html>
